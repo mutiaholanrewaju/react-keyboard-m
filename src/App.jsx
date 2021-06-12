@@ -15,20 +15,20 @@ const App = () => {
 
 
 	//yet to get the backspace key to work
-	const buttonBack = (e) => {
-		setCurrentlyFocusedInput((currFoc) => {
-			let val = currFoc.value + e.target.value;
+	//const buttonBack = (e) => {
+	//	setCurrentlyFocusedInput((currFoc) => {
+	//		let val = currFoc.value + e.target.value;
 
-			var key = Event.keyCode || Event.charCode;
-			currFoc.value = key;
-			if (key == 8) {
-				//backspace pressed
-				return key;
-			}
-			// return currFoc;
-		});
+	//		var key = Event.keyCode || Event.charCode;
+	//		currFoc.value = key;
+	//		if (key == 8) {
+	//			//backspace pressed
+	//			return key;
+	//		}
+	//		// return currFoc;
+	//	});
 		currentlyFocusedInput.focus();
-	};
+	//};
 
 	return (
 		<div className='App'>
@@ -95,7 +95,7 @@ const App = () => {
 					<button value='B' onClick={buttonHandler}>B</button>
 					<button value='N' onClick={buttonHandler}>N</button>
 					<button value='M' onClick={buttonHandler}>M</button>
-					<button value='[key]' onClick={buttonBack} className='btn-large'>Backspace</button>
+					<button value='' className='btn-large'>Backspace</button>
 				</div>
 				<div className='key-row'>
 					<button value=' ' onClick={buttonHandler} className='btn-full'></button>
