@@ -14,21 +14,6 @@ const App = () => {
 	};
 
 
-	//yet to get the backspace key to work
-	//const buttonBack = (e) => {
-	//	setCurrentlyFocusedInput((currFoc) => {
-	//		let val = currFoc.value + e.target.value;
-
-	//		var key = Event.keyCode || Event.charCode;
-	//		currFoc.value = key;
-	//		if (key == 8) {
-	//			//backspace pressed
-	//			return key;
-	//		}
-	//		// return currFoc;
-	//	});
-		currentlyFocusedInput.focus();
-	//};
 
 	return (
 		<div className='App'>
